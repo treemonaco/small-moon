@@ -1,0 +1,655 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt|Arvo);
+
+body {
+	color: #424242;
+	background-color: #333;
+	font-family: 'Arvo', serif;
+}
+
+/* @group typography */
+
+h2 {
+	font-family: 'Rock Salt', cursive;
+	margin-bottom: 1.5rem;
+}
+
+h3 {
+	font-family: 'Arvo', serif;
+}
+
+h4 {
+	margin-bottom: 1.15rem;
+	font-family: 'Arvo', sans-serif;
+	font-weight: 700;
+}
+
+h5 {
+	color: #d65656;
+	font-family: 'Arvo', sans-serif;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+/* @end */
+
+/* @group links */
+
+/* @end */
+
+/* @group buttons */
+
+button, .button {
+	background: #ffdb00;
+	font-size: 1.15rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	word-spacing: 3px;
+	padding: 1.25rem 1rem 1rem;
+	border-radius: 30px;
+	border-bottom: 5px solid #d8b900;
+	text-shadow: 2px 2px 0 #d8b900;
+}
+
+.button.donate {
+	background: #ff6666;
+	border-bottom: 5px solid #d65656;
+	text-shadow: 2px 2px 0 #d65656;
+}
+
+.purchase i {
+	font-size: 1.5rem;
+	line-height: 0;
+}
+
+.donate i {
+	font-size: 1.25rem;
+	line-height: 0;
+}
+
+button:hover, .button:hover, button:focus, .button:focus {
+	color: #fff;
+}
+
+.button.submit {
+	background: #00ccd7;
+	text-shadow: 2px 2px 0 #009ca4;
+	border-bottom: 5px solid #009ca4;
+}
+
+.close-button {
+	background: transparent;
+	top: 0rem;
+	right: 0rem;
+	padding: 0;
+	border: 0;
+	text-shadow: none;
+}
+
+.close-button i {
+	color: #000;
+	padding: 0.5rem;
+}
+
+#open-menu, .purchase-fixed, .donate-fixed {
+	background: transparent;
+	position: absolute;
+	top: -0.5rem;
+	padding: 0;
+	border: 0;
+	right: 3.65rem;
+	z-index: 2;
+	text-shadow: none;
+}
+
+#open-menu span {
+	position: absolute;
+	display: block;
+	left: -70px;
+	top: 13px;
+	padding-right: 15px;
+}
+
+#open-menu i {
+	background: #00ccd7;
+	color: #fff;
+	position: fixed;
+	font-size: 2rem;
+	padding: 0.35rem 0.535rem;
+	border-radius: 6px;
+}
+
+#menu-modal .button {
+	max-width: 360px;
+}
+
+.purchase-fixed {
+	top: 2.7rem;
+	text-shadow: 2px 2px 0 #d8b900;
+}
+
+.donate-fixed {
+	top: 5.9rem;
+	text-shadow: 2px 2px 0 #d65656;
+}
+
+.purchase-fixed i, .donate-fixed i {
+	position: fixed;
+	color: #fff;
+	font-size: 1.65rem;
+	background: #ffdb00;
+	width: 45px;
+	height: 44px;
+	padding: 0.6rem 0.5rem;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.donate-fixed i {
+	background: #ff6666;
+}
+
+.fixed {display: none;}
+
+/* countdown styles */
+#countdown {
+	color: #fff;
+	background: #ff6666;
+	padding: 1rem 0;
+}
+.countdown-text {
+	float: left;
+	margin-top: 5px;
+	margin-right: 8px;
+	font-size: 0.85rem;
+	font-family: 'Rock Salt', cursive;
+}
+.countdown.styled {
+	float: left;
+}
+.countdown.styled div {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.countdown-info {
+	font-weight: 700;
+	position: relative;
+	top: 3px;
+}
+/* countdown IE7 inline-block hack */
+*+html .countdown.styled div{
+	display: inline;
+	zoom: 1;
+}
+.countdown.styled div:first-child {
+	margin-left: 0;
+}
+.countdown.styled div span {
+	display: inline-block;
+	font-size: 0.85rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group menu modal */
+
+#menu-modal {
+	background: transparent;
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	min-height: 42rem;
+	top: 0 !important;
+	padding: 2.5rem;
+}
+
+#menu-modal-inner {
+	background: #fff;
+	margin: auto;
+	padding: 2rem 1rem 3rem;
+	position: relative;
+	border-radius: 6px;
+}
+
+#menu-modal-inner .row {
+	position: relative;
+}
+
+#menu-nav {
+	float: right;
+}
+
+#menu-overview-content {
+	margin-top: 1rem;
+}
+
+#menu-overview-content h3 {
+	font-size: 4rem;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+}
+
+#menu-overview-content h4 {
+	margin-top: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+#menu-overview-content .purchase {
+	margin-top: 2rem;
+}
+
+ul.social {
+	margin: 0;
+}
+
+ul.social li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 1rem;
+}
+
+ul.social li a {
+	font-size: 4rem;
+	line-height: 0;
+}
+
+#nav {
+	margin-top: 2rem;
+	margin-left: 2rem;
+}
+
+#nav li {
+	margin-bottom: 1.45rem;
+}
+
+#nav li a {
+	color: #ff6666;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+#nav li a:hover {
+	color: #d65656;
+}
+
+/* @end */
+
+/* @group layout */
+
+#wrapper {
+	background: #fff;
+	margin: 0;
+}
+
+#wrapper-inner {
+	position: relative;
+}
+
+section {
+	padding: 3rem 1rem;
+}
+
+#header {
+	color: #fff;
+	background: #00ccd7;
+	height: 60px;
+	padding: 1rem 0rem;
+}
+
+#header > .row {
+	position: relative;
+}
+
+#header p {
+	margin-bottom: 0;
+}
+
+#logo-sun {
+	max-height: 50px;
+	margin-top: -12px;
+	margin-right: 5px;
+}
+
+#logo {
+	position: relative;
+	top: -2px;
+	font-family: 'Rock Salt', cursive;
+	display: inline-block;
+	font-weight: 600;	
+}
+
+.center {
+	text-align: center;
+}
+
+span.highlight {
+    color: #d65656;
+    font-weight: bold;
+}
+
+/* foundation accordion style fixes */
+body .accordion-title {
+    font-size: 1.75rem;
+    color: #00ccd7;
+}
+body .accordion-title:hover, .accordion-title:focus {
+    background-color: #00ccd7;
+    color: #fff;
+}
+body .accordion-title::before {
+    margin-top: -0.75rem;
+}
+
+
+#lp h1 {
+	font-family: 'Rock Salt', cursive;
+	font-size: 5rem;
+	text-shadow: 1px 1px 8px #000;
+	color: #fff;
+	text-align: center;
+}
+#lp .title {
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 5px #000;
+	color: #ffdb00;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	text-align: center;
+}
+#lp .dates {
+	position: absolute;
+	bottom: 4rem;
+	left: 0;
+	font-size: 2rem;
+	text-shadow: 1px 1px 5px #000;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	width: 100%;
+}
+#lp {
+	position: relative;
+	min-height: 680px;
+	background: url(../imgs/solstice-header-00.jpg) center center / auto 100% no-repeat;
+	background-size: cover;
+}
+
+#about {
+	background-color: #fefefe;
+}
+
+#about .donate {
+	margin-top: 2rem;
+}
+
+#tickets {
+	background: #f9f9f9;
+}
+
+#venue {
+	background-color: #fefefe;
+	position: relative;
+	overflow: hidden;
+}
+
+#directions {
+	position: relative;
+	z-index: 2;
+}
+
+#map {
+	width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;	
+	background-image: url(../imgs/cheslen-preserve-map.jpg);
+	background-size: cover;
+}
+
+#map-overlay {
+	background: #fefefe;
+	position: absolute;
+	width: 140px;
+	height: 200%;
+	top: -45px;
+	left: -120px;
+	z-index: 1;
+    transform: rotate(15deg) scale(1) skew(1deg) translate(0px);
+    -webkit-transform: rotate(15deg) scale(1) skew(1deg) translate(0px);
+}
+
+#map a {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.blue {
+	color: #fff;
+	background: #00ccd7 url(imgs/asfalt-light.png) repeat 0 0;
+}
+
+#artists {
+	margin-top: 1rem;
+}
+
+.artist {
+	min-height: 200px;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #00b4be;
+}
+
+#general-info {
+	background: #f9f9f9;
+}
+
+#volunteer-sponsors {
+	background-color: #fefefe;
+}
+
+#volunteer-sponsor-contact {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.video-wrapper {
+	background: #00b4be;
+	margin-top: 2rem;
+	padding: 3rem 3rem 2rem;
+	border-radius: 6px;
+}
+
+.map {
+    border: 8px solid #f9f9f9;
+    border-radius: 6px;
+}
+
+#sponsors {
+	background: #f9f9f9;
+}
+
+#gold-sponsors {
+	background: #ffdb00 url(imgs/asfalt-light.png) repeat 0 0;
+}
+
+#gold-sponsors h3 {
+	margin-bottom: 1.5rem;
+}
+
+#gold-sponsors .sponsor {
+	background: #f4d204;
+	border-radius: 6px;
+	text-align: center;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+#other-sponsors {
+	background-color: #fefefe;
+}
+
+#contact {
+	background: #f9f9f9;
+}
+
+/* @end */
+
+/* @group footer */
+
+#footer {
+	color: #757575;
+}
+
+#footer-nav {
+	margin: 0 0 3rem;
+}
+
+#footer-nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 0.45rem;
+	font-size: 0.95rem;
+}
+
+#footer-nav li:after {
+	content: '/';
+	padding-left: 0.5rem;
+}
+
+#footer-nav li:last-child:after {
+	content: '';
+}
+
+#footer-nav a {
+	color: #757575;
+}
+
+#footer-nav a:hover {
+	color: #fefefe;
+}
+
+#copyright, #created-by {
+	font-size: 0.75rem;
+}
+
+#created-by {
+	text-align: right;
+}
+
+/* @end */
+
+/* @group media queries */
+
+/* Large Screens */
+@media screen and (min-width: 60em) {
+	#menu-modal-inner {
+		height: 100% !important;	
+	}
+	#menu-overview-content {
+		padding-right: 4rem;
+	}
+	p, ul {
+		font-size: 1.2rem;
+		line-height: 1.4;
+	}
+}
+
+/* Small Screens */
+@media only screen and (max-width: 639px) {
+	#menu-modal {
+		padding: 1rem;
+	}
+	#menu-modal-inner {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	#menu-modal-inner .row {
+		padding: 0;
+	}
+	#menu-nav {
+		float: left;
+	}
+	#menu-overview-content .purchase {
+		margin-top: 0;
+	}
+	.countdown {
+		margin-bottom: 1rem;
+	}
+	#header {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	#logo {
+		display: none;
+	}
+	#lp {
+		padding-top: 1.25rem;
+		padding-bottom: 1.5rem;
+		min-height: 300px !important;
+	}
+	#lp .title {
+		font-size: 1.15rem;
+	}
+	#lp h1 {
+		font-size: 1.7rem;
+		margin-top: 0.25rem;
+		margin-bottom: 0.45rem;
+	}
+	#lp .dates {
+		font-size: 1.25rem;
+		bottom: 1rem;
+	}
+	#nav {
+		margin-top: 1.25rem;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	#nav li {
+		margin-bottom: 1.15rem;
+	}
+	#nav li:last-child {
+		margin-bottom: 0.25rem;
+	}
+	#nav li a {
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 1.25rem;
+	}
+	#menu-overview h3, #menu-overview p {
+		display: none;
+	}
+	#menu-overview h4 {
+		margin-top: 1.5rem;
+	}
+	section {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	#map {
+		position: relative;
+		width: 100%;
+		display: block;
+		height: 300px;
+	}
+	#map-overlay {
+		display: none;
+	}
+	body .accordion-title {
+		font-size: 1rem;
+	}
+	.video-wrapper {
+		padding: 1rem 1rem 0.25rem;
+	}
+}
+/* @end */
